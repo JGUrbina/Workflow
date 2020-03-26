@@ -1,0 +1,167 @@
+:root {
+	--primary: #621055;
+	--secondary: #ffa372;
+	--white: #fff;
+	--black: #000;
+
+}
+
+$primary: var(--primary);
+$secondary: var(--secondary);
+$white: var(--white);
+$black: var(--black);
+* {
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box;
+}
+body {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #232222;
+}
+h1, h2, h3, h4, h5, h6, a {
+	font-family: 'Playfair Display', serif; 
+}
+
+p {
+	color: #777;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+.f-w-100 {
+	font-weight: 200;
+	font-family: 'Montserrat', sans-serif;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 0 15px;
+}
+.d-flex {
+	display: flex;
+}
+.justify-c-b {
+	justify-content: space-between;
+}
+.f-wrap {
+	flex-wrap: wrap;
+}
+.d-none {
+	display: none;
+}
+.m-t-24, m-y-24 {
+	margin-top: 24px;
+}
+.p-y-48 {
+	padding: 48px 0;
+}
+.list {
+	list-style: none;
+}
+.color-secondary {
+	color: $secondary;
+}
+.absolute {
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+
+$width: 0;
+@for $i from 1 through 12 {
+	.col-#{$i} {
+			$width: $width + 8.33333%;
+			flex: 0 0 $width;
+			max-width:  $width;
+		}
+}
+
+@include mobile {
+	.container {
+		max-width: 540px;
+	}
+.d-flex-sm {
+	display: flex;
+	justify-content: space-between;
+}
+$width: 0;
+@for $i from 1 through 12 {
+	.col-sm-#{$i} {
+			$width: $width + 8.33333%;
+			flex: 0 0 $width;
+			max-width:  $width;
+  			padding: 0 15px;
+  			width: 100%;
+		}
+}
+
+}
+
+@media (min-width: 500px) and (max-width: 960px) {
+	h1 {
+		color: red !important;
+	}
+}
+@include tablet {
+
+	.container {
+		max-width: 720px;
+	}
+	.d-flex-md {
+		display: flex;
+	}
+$width: 0;
+@for $i from 1 through 12 {
+	.col-md-#{$i} {
+			$width: $width + 8.33333%;
+			flex: 0 0 $width;
+			max-width:  $width;
+  			padding: 0 15px;
+  			width: 100%;
+		}
+}
+
+}
+
+
+@include laptop {
+	.container {
+		max-width: 960px;
+	}
+	.d-flex-lg {
+		display: flex;
+	}
+$width: 0;
+@for $i from 1 through 12 {
+	.col-lg-#{$i} {
+			$width: $width + 8.33333%;
+			flex: 0 0 $width;
+			max-width:  $width;
+  			padding: 0 15px;
+  			width: 100%;
+		}
+}
+
+}
+
+@include desktop {
+$width: 0;
+@for $i from 1 through 12 {
+	.col-xl-#{$i} {
+			$width: $width + 8.33333%;
+			flex: 0 0 $width;
+			max-width:  $width;
+  			padding: 0 15px;
+  			width: 100%;
+		}
+}
+
+}

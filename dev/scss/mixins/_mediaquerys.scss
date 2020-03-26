@@ -1,0 +1,49 @@
+$mini_mobile: 320px;
+$mobile: 576px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+// prefiix xs-
+
+@mixin mini_mobile {
+	@media (min-width: $mini_mobile) {
+		@content;
+	}
+}
+
+// prefiix sm-
+
+@mixin mobile {
+	@media (min-width: $mobile) {
+		@content;
+	}
+}
+
+// prefiix md-
+@mixin tablet {
+	@media (min-width: $tablet) {
+		@content;
+	}
+}
+
+// prefiix lg-
+@mixin laptop {
+	@media (min-width: $laptop) {
+		@content;
+	}
+}
+// prefiix xl-
+@mixin desktop {
+	@media (min-width: $desktop) {
+		@content;
+	}
+}
+
+@mixin button($width, $height, $bg-color, $color, $b-radius) {
+	width: $width;
+	height: $height;
+	background-color: $bg-color;
+	color: $color;
+	border-radius: $b-radius;
+}

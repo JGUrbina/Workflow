@@ -1,0 +1,29 @@
+.card-row {
+	display: flex;
+	&__title--mini {
+		font-size: 16px;
+		margin-top: 0;
+	}
+	.content {
+		padding-left: 10px;
+	}
+	&__img--mini {
+		border-radius: 10px;
+	}
+}
+
+.d-flex-md {
+	@include tablet {
+		.content {
+			padding-left: 15px;
+		}
+		.card__title {
+			margin-top: 0;
+
+		} 
+		.card__header {
+			flex: 0 0 50%;
+			height: 100%;
+		}
+	}
+}

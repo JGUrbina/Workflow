@@ -45,19 +45,17 @@ function server() {
 	watch("dist/js/*.js").on('change', browserSync.reload);
 }
 function html() {
-	return src('dev/pug/**/*.pug')
+	return src('dev/pug/pages/*.pug')
 	.pipe(plumber())
 	.pipe(pug(optionsPug))
 	.pipe(dest('dist/'))
 }
 
 function css() {
-	return src('dev/scss/**/*.scss')
+	return src('dev/scss/*.scss')
 	.pipe(plumber())
 	.pipe(sass(optionsSass))
-	.pipe(autoprefixer({
-		browsers: "last 3 version"
-	}))
+	.pipe(autoprefixer())
 	.pipe(dest('dist/css/'))
 	.pipe(browserSync.stream())
 }
@@ -73,10 +71,7 @@ function js() {
 
 function imgMin() {
 	return src('dev/img/**/*')
-	.pipe(imagemin([
-		imagemin.mozjpeg({quality: 75, progressive: true}),
-		imagemin.optipng({optimizationLevel: 5})
-		]))
+	.pipe(imagemin())
 	.pipe(dest('dist/img/'))
 }
 
