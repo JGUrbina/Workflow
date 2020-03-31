@@ -1,0 +1,101 @@
+mixin card(img, figureTitle,resalt,datetime,date)
+	.card
+		.card__header
+			figure
+				img(data-src= `img/${img}`, alt=`${figureTitle}`, class="lazy").card__img
+				figcaption.card__figcation
+					.content
+						if figureTitle
+							h4.card__title--ocult= `${figureTitle}`
+								span.card__figcation-title-resalt= `${resalt}`
+						else
+							h4.card__title--ocult
+								span.card__figcation-title-resalt= `${resalt}`
+						if date
+							timer(datetime=`${datetime}`).card__date--ocult= `${date}`
+- blocks = {}
+
+mixin set(key)
+	- blocks[key] = this.block
+
+
+mixin cardArticle(img, figureTitle,resalt,datetime,date,title,blogger, datetimeArticle, dateArticle)
+	article.card.article
+				header.card__header
+					figure
+						img(data-src= `img/${img}`, alt=`${title}`, class="lazy").card__img
+						if figureTitle || resalt || date
+							figcaption.card__figcation
+								.content
+									h4.card__figcation-title= `${figureTitle}`
+										span.card__figcation-title-resalt= `${resalt}`
+									timer(datetime=`${datetime}`).card__date= `${date}`
+				.card__body
+					h1.card__title
+						a(href="#").card__link= `${title}`
+					block
+					if blocks.contentBody
+						- blocks.contentBody()
+				footer.card__footer.d-flex
+						if blocks.blogger
+							- blocks.blogger()
+						
+						timer(datetime=`${datetimeArticle}`).article__date= `BY ${blogger} ${dateArticle}`
+
+mixin cardArticleRow(type,img,title,blogger, datetimeArticle, dateArticle)
+	if type == 'mini'
+		article.card.card-row-mini
+			header.card__header
+				img(data-src= `img/${img}`, alt=`${title}`, class="lazy").card__img
+			.content
+				.card__body
+					h1.card-row__title--mini
+						a(href="#").card__link= `${title}`
+					block
+					if blocks.contentBody
+						- blocks.contentBody()
+				foorter.card__footer
+					if blocks.blogger
+						- blocks.blogger()
+					timer(datetime=`${datetimeArticle}`).article__date= `BY ${blogger} ${dateArticle}`
+	else
+		article.card.card-row
+			header.card__header
+				img(data-src= `img/${img}`, alt=`${title}`, class="lazy").card__img
+			.content
+				.card__body
+					h1.card__title
+						a(href="#").card__link= `${title}`
+					block
+					if blocks.contentBody
+						- blocks.contentBody()
+				foorter.card__footer
+					if blocks.blogger
+						- blocks.blogger()
+					timer(datetime=`${datetimeArticle}`).article__date= `BY ${blogger} ${dateArticle}`
+
+mixin cardGrid(img, title)
+	.grid-categories
+			.grid-categories__figure
+				img(data-src=`img/${img}`, class="lazy").grid-categories__img
+			.grid-categories__info
+				a(href="#").grid-categories__link
+					h4=`${title}`
+
+mixin cardVideo(thumbnail, title, video)
+		article.card.article.video
+					.card__header
+						figure
+							img(data-src=`img/${thumbnail}`, alt=`${title}`, class="lazy").card__img
+							figcaption.card__figcation
+								i.icon-play
+					.card__body
+						h1.card__title
+							a(href="#").card__link= `${title}`
+
+		.containder-video-modal
+			.video-modal
+				i.icon-times
+				h2.video-modal__title Whach our video
+				
+				.video-modal__video= `${video}`

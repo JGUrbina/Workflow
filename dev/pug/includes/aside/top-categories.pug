@@ -1,35 +1,15 @@
-section
+section.new-section
 	h1.section-title TOP 
 		span.section-title-resalt CATEGORIES
 	.container-grid-categories
-		.grid-categories
-			.grid-categories__figure
-				img(src="img/m11.jpg").grid-categories__img
-			.grid-categories__info
-				a(href="#").grid-categories__link
-					h4 Fashion
-		.grid-categories
-			.grid-categories__figure
-				img(src="img/m11.jpg").grid-categories__img
-			.grid-categories__info
-				a(href="#").grid-categories__link
-					h4 Fashion
-		.grid-categories
-			.grid-categories__figure
-				img(src="img/m11.jpg").grid-categories__img
-			.grid-categories__info
-				a(href="#").grid-categories__link
-					h4 Fashion
-		.grid-categories
-			.grid-categories__figure
-				img(src="img/m11.jpg").grid-categories__img
-			.grid-categories__info
-				a(href="#").grid-categories__link
-					h4 Fashion
+		+cardGrid('m11.jpg', 'Fashion')
+		+cardGrid('m10.jpg', 'Culture')
+		+cardGrid('m12.jpg', 'LifeStyle')
+		+cardGrid('m9.jpg', 'Food')
+		+cardGrid('m13.jpg', 'Busines')
 
 		
 
 	.published
 		a(href="#")
 			img(src="img/add.jpg")
-

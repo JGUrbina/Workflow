@@ -1,3 +1,15 @@
+.container-article-video {
+	@include mobile {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	@include laptop {
+		display: block;
+	}
+}
+
 .video {
 	.card__img {
 		border-radius: 5px;;
@@ -20,6 +32,16 @@
 		border-radius: 50%;
 
 	}
+	@include mobile {
+		flex: 0 0 calc(50% - 15px);
+		max-width: calc(50% - 15px);
+	}
+
+	@include laptop {
+		flex: 100%;
+		max-width: 100%;
+	}
+	
 }
 
 .containder-video-modal {

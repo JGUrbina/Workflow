@@ -41,16 +41,25 @@ img {
 }
 .container {
 	width: 100%;
-	margin: 0 auto;
-	max-width: 960px;
 	padding: 0 15px;
+	margin: 0 auto;
+	@include tablet {
+		max-width: 720px;
+	}
+	@include laptop {
+		max-width: 960px;
+	}
+}
+.container-main-aside {
+	@include laptop {
+		display: flex; 
+		justify-content: space-between;
+	}
 }
 .d-flex {
 	display: flex;
 }
-.justify-c-b {
-	justify-content: space-between;
-}
+
 .f-wrap {
 	flex-wrap: wrap;
 }
@@ -84,84 +93,3 @@ $width: 0;
 		}
 }
 
-@include mobile {
-	.container {
-		max-width: 540px;
-	}
-.d-flex-sm {
-	display: flex;
-	justify-content: space-between;
-}
-$width: 0;
-@for $i from 1 through 12 {
-	.col-sm-#{$i} {
-			$width: $width + 8.33333%;
-			flex: 0 0 $width;
-			max-width:  $width;
-  			padding: 0 15px;
-  			width: 100%;
-		}
-}
-
-}
-
-@media (min-width: 500px) and (max-width: 960px) {
-	h1 {
-		color: red !important;
-	}
-}
-@include tablet {
-
-	.container {
-		max-width: 720px;
-	}
-	.d-flex-md {
-		display: flex;
-	}
-$width: 0;
-@for $i from 1 through 12 {
-	.col-md-#{$i} {
-			$width: $width + 8.33333%;
-			flex: 0 0 $width;
-			max-width:  $width;
-  			padding: 0 15px;
-  			width: 100%;
-		}
-}
-
-}
-
-
-@include laptop {
-	.container {
-		max-width: 960px;
-	}
-	.d-flex-lg {
-		display: flex;
-	}
-$width: 0;
-@for $i from 1 through 12 {
-	.col-lg-#{$i} {
-			$width: $width + 8.33333%;
-			flex: 0 0 $width;
-			max-width:  $width;
-  			padding: 0 15px;
-  			width: 100%;
-		}
-}
-
-}
-
-@include desktop {
-$width: 0;
-@for $i from 1 through 12 {
-	.col-xl-#{$i} {
-			$width: $width + 8.33333%;
-			flex: 0 0 $width;
-			max-width:  $width;
-  			padding: 0 15px;
-  			width: 100%;
-		}
-}
-
-}

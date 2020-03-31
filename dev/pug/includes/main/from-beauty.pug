@@ -1,64 +1,29 @@
-section
+section.new-section
 		h1.section-title From 
 			span.section-title-resalt Beauty
-		.d-flex.justify-c-b.f-wrap
+		.from-beauty
 
 			//- Bucle Here
-
-			article.card.article.col-md-6.col-lg-4
-				header.card__header
-					figure
-						img(src="img/grid7.jpg", alt="Woman Near Pigeons").card__img
-						figcaption.card__figcation
-							.content
-								h4.card__figcation-title Woman Near 
-									span.card__figcation-title-resalt Pigeons
-								timer.card__date Jan.20.2020
-				.card__body
-					h1.card__title
-						a(href="#").card__link There are many variations that focuses on presenting
+			+cardArticle('grid6.jpg', 'Woman Near','Pigeons','2020-06-05','Jan 20 2020','There are many variations that focuses on presenting','JOHN BRAIN', '2020-06-16', 'Jan 16, 2020')
+				+set('contentBody')
 					a(href="#").card__read-more Read More
-				footer.card__footer.d-flex
+				+set('blogger')
 					.card__blogger
 						a(href="#")
 							img(src="img/admin.jpg" alt="Admin").card__blogger-img
-					timer.article__date BY JOHN BRAIN Jan 5, 2020
 
-
-			article.card.article.col-md-6.col-lg-4
-				header.card__header
-					figure
-						img(src="img/grid7.jpg", alt="Woman Near Pigeons").card__img
-						figcaption.card__figcation
-							.content
-								h4.card__figcation-title Woman Near 
-									span.card__figcation-title-resalt Pigeons
-								timer.card__date Jan.20.2020
-				.card__body
-					h1.card__title
-						a(href="#").card__link There are many variations that focuses on presenting
+			+cardArticle('grid7.jpg', 'Woman Near','Pigeons','2020-06-05','Jan 20 2020','There are many variations that focuses on presenting','JOHN BRAIN', '2020-06-16', 'Jan 16, 2020')
+				+set('contentBody')
 					a(href="#").card__read-more Read More
-				footer.card__footer.d-flex
+				+set('blogger')
 					.card__blogger
 						a(href="#")
 							img(src="img/admin.jpg" alt="Admin").card__blogger-img
-					timer.article__date BY JOHN BRAIN Jan 5, 2020
 
-			article.card.article.col-md-6.col-lg-4
-				header.card__header
-					figure
-						img(src="img/grid7.jpg", alt="Woman Near Pigeons").card__img
-						figcaption.card__figcation
-							.content
-								h4.card__figcation-title Woman Near 
-									span.card__figcation-title-resalt Pigeons
-								timer.card__date Jan.20.2020
-				.card__body
-					h1.card__title
-						a(href="#").card__link There are many variations that focuses on presenting
+			+cardArticle('grid8.jpg', 'Woman Near','Pigeons','2020-06-05','Jan 20 2020','There are many variations that focuses on presenting','JOHN BRAIN', '2020-06-16', 'Jan 16, 2020')
+				+set('contentBody')
 					a(href="#").card__read-more Read More
-				footer.card__footer.d-flex
+				+set('blogger')
 					.card__blogger
 						a(href="#")
 							img(src="img/admin.jpg" alt="Admin").card__blogger-img
-					timer.article__date BY JOHN BRAIN Jan 5, 2020

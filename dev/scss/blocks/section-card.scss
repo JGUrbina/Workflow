@@ -1,3 +1,4 @@
+/*section and card*/
 .section-title {
 	text-align: center;
 	&-resalt {
@@ -57,6 +58,7 @@
 		}
 
 		.content {
+			margin: 0 auto;
 			padding-top: 20px;
 			overflow: hidden;
 		}
@@ -132,7 +134,10 @@
 			color: #b52b65;
 		}
 	}
-
+	&__footer {
+		display: flex;
+		align-items: center;
+	}
 	&__blogger {
 		width: 30px;
 		min-width: 30px;
@@ -148,6 +153,8 @@
 	}
 
 }
+
+// articles
 
 .article {
 

@@ -1,4 +1,5 @@
 include ../config/config
+include ../mixins/mixins
 <!Doctype html>
 html
 	head
@@ -8,10 +9,13 @@ html
 		link(rel="stylesheet", href="fonts/styles.css")
 		link(rel="stylesheet", href="css/style.css")
 		link(href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600|Playfair+Display:400,500,600,700,900&display=swap" rel="stylesheet")
+		script( async src="js/lazyload.js")
 	body
-		include header
+		include ../includes/header
 		include ../includes/slider
 		include ../includes/recent-news
 		include ../includes/container-main-aside
 		include ../includes/subscribe
-		include footer
+		include ../includes/footer
+		script( async src="js/app.js")
+		

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="fonts/styles.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600|Playfair+Display:400,500,600,700,900&amp;display=swap" rel="stylesheet"/>
+    <script async="async" src="js/lazyload.js"></script>
   </head>
   <body>
     <header class="header">
@@ -65,49 +66,17 @@
       </div>
       <div class="header-bottom container">
         <div class="nav-button"><span class="nav-button__line"></span><span class="nav-button__line"></span><span class="nav-button__line"></span></div>
-        <nav class="nav">
-          <ul class="list menu">
-            <li class="menu__item"><a class="menu__home menu__link" href="#">HOME<i class="icon-down-open"></i></a>
-              <ul class="list menu__sub">
-                <li class="menu__item"><a class="menu__link" href="home.html">HOME</a></li>
-                <li class="menu__item"><a class="menu__link" href="homev1.html">HOMEV1</a></li>
-                <li class="menu__item"><a class="menu__link" href="homev2.html">HOMEV2</a></li>
-                <li class="menu__item"><a class="menu__link" href="homev3.html">HOMEV3</a></li>
-                <li class="menu__item"><a class="menu__link" href="autor.html">AUTOR</a></li>
-              </ul>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="lifestyle.html">LIFESTYLE</a>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="culture.html">CULTURE</a>
-            </li>
-            <li class="menu__item"><a class="menu__pages menu__link" href="pages.html">PAGES<i class="icon-down-open"></i></a>
-              <ul class="list menu__sub">
-                <li class="menu__item"><a class="menu__link" href="#">FOOD</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">AUTORS</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">BLOG POST</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">BLOG DETAILS</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">CONTACT</a></li>
-              </ul>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a>
-            </li>
-          </ul>
-          <ul class="list d-flex">
-            <li><a class="modal__link" href="https://facebook.com"><i class="icon-facebook socials-icon"></i></a></li>
-            <li><a class="modal__link" href="https://twitter.com"><i class="icon-twitter socials-icon"></i></a></li>
-            <li><a class="modal__link" href="https://google.com"><i class="icon-google socials-icon"></i></a></li>
-          </ul>
-        </nav>
+        <nav class="nav"></nav>
       </div>
     </header>
-    <div class="container">
+    <div class="container" id="slider">
       <div class="slider-main d-flex"><i class="icon-angle-left slider-buttons s-left"></i><i class="icon-angle-right slider-buttons s-right"></i>
         <article class="slider">
-          <header class="slider__header"><img class="slider__img" src="img/banner1.jpg" alt="7 Ways Amazon Whole Foods Is Catering to Every Millennial’s Whims"/></header>
+          <header class="slider__header"><img class="slider__img fade" src="img/banner1.jpg" alt="7 Ways Amazon Whole Foods Is Catering to Every Millennial’s Whims"/></header>
           <div class="slider__p-absolute">
             <div class="content">
               <div class="slider__body">
-                <h1 class="slider__title">A New Report Shows That Fashion Ads Are Still Overwhelmingly White Dresses</h1>
+                <h1 class="slider__title">Item 1</h1>
                 <p class="slider__text">Lorem ipsum dolor sit amet,Vestibulum orci justo, vehicula vel sapien sit amet.</p>
               </div>
               <footer class="slider__footer">
@@ -117,11 +86,11 @@
           </div>
         </article>
         <article class="slider">
-          <header class="slider__header"><img class="slider__img" src="img/banner1.jpg" alt="7 Ways Amazon Whole Foods Is Catering to Every Millennial’s Whims"/></header>
+          <header class="slider__header"><img class="slider__img fade" src="img/banner2.jpg" alt="7 Ways Amazon Whole Foods Is Catering to Every Millennial’s Whims"/></header>
           <div class="slider__p-absolute">
             <div class="content">
               <div class="slider__body">
-                <h1 class="slider__title">A New Report Shows That Fashion Ads Are Still Overwhelmingly White Dresses</h1>
+                <h1 class="slider__title">Item 2</h1>
                 <p class="slider__text">Lorem ipsum dolor sit amet,Vestibulum orci justo, vehicula vel sapien sit amet.</p>
               </div>
               <footer class="slider__footer">
@@ -131,7 +100,7 @@
           </div>
         </article>
         <article class="slider">
-          <header class="slider__header"><img class="slider__img" src="img/banner1.jpg" alt="7 Ways Amazon Whole Foods Is Catering to Every Millennial’s Whims"/></header>
+          <header class="slider__header"><img class="slider__img fade" src="img/banner1.jpg" alt="7 Ways Amazon Whole Foods Is Catering to Every Millennial’s Whims"/></header>
           <div class="slider__p-absolute">
             <div class="content">
               <div class="slider__body">
@@ -146,29 +115,29 @@
         </article>
       </div>
     </div>
-    <section class="news p-y-48">
+    <section class="new-section">
       <div class="container">
         <h1 class="section-title">Recent <span class="section-title-resalt">News</span></h1>
-        <div class="d-flex justify-c-b f-wrap">
-          <div class="card col-md-12 col-lg-6">
+        <div class="recent-news">
+          <div class="card">
             <div class="card__header">
-              <figure><img class="card__img" src="img/grid20.jpg" alt="In Black Jacket And Brown Hat Standing On Rock "/>
+              <figure><img class="lazy card__img" data-src="img/grid20.jpg" alt="Man In Black Jacket And Brown Hat Standing On Rock "/>
                 <figcaption class="card__figcation">
                   <div class="content">
                     <h4 class="card__title--ocult">Man In Black Jacket And Brown Hat Standing On Rock <span class="card__figcation-title-resalt">Near Lake</span></h4>
-                    <timer class="card__date--ocult">Jan.20.2020</timer>
+                    <timer class="card__date--ocult" datetime="2020-06-20">Jan 20 2020</timer>
                   </div>
                 </figcaption>
               </figure>
             </div>
           </div>
-          <article class="card article col-md-6 col-lg-3">
+          <article class="card article">
             <header class="card__header">
-              <figure><img class="card__img" src="img/grid7.jpg" alt="Woman Near Pigeons"/>
+              <figure><img class="lazy card__img" data-src="img/grid7.jpg" alt="There are many variations that focuses on presenting"/>
                 <figcaption class="card__figcation">
                   <div class="content">
-                    <h4 class="card__figcation-title">Woman Near <span class="card__figcation-title-resalt">Pigeons</span></h4>
-                    <timer class="card__date">Jan.20.2020</timer>
+                    <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
+                    <timer class="card__date" datetime="2020-06-05">Jan 20 2020</timer>
                   </div>
                 </figcaption>
               </figure>
@@ -176,17 +145,17 @@
             <div class="card__body">
               <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1><a class="card__read-more" href="#">Read More</a>
             </div>
-            <footer class="card__footer">
-              <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+            <footer class="card__footer d-flex">
+              <timer class="article__date" datetime="2020-06-16">BY JOHN BRAIN Jan 16, 2020</timer>
             </footer>
           </article>
-          <article class="card article col-md-6 col-lg-3">
+          <article class="card article">
             <header class="card__header">
-              <figure><img class="card__img" src="img/grid8.jpg" alt="Man Standing On Railroad Near Plants"/>
+              <figure><img class="lazy card__img" data-src="img/grid8.jpg" alt="There are many variations that focuses on presenting"/>
                 <figcaption class="card__figcation">
                   <div class="content">
-                    <h4 class="card__figcation-title">Man Standing On Railroad Near <span class="card__figcation-title-resalt">Plants</span></h4>
-                    <timer class="card__date">Jan.20.2020</timer>
+                    <h4 class="card__figcation-title">Man Standing On Railroad Near<span class="card__figcation-title-resalt">Plants</span></h4>
+                    <timer class="card__date" datetime="2020-06-05">Jan 20 2020</timer>
                   </div>
                 </figcaption>
               </figure>
@@ -194,26 +163,26 @@
             <div class="card__body">
               <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1><a class="card__read-more" href="#">Read More</a>
             </div>
-            <footer class="card__footer">
-              <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+            <footer class="card__footer d-flex">
+              <timer class="article__date" datetime="2020-06-16">BY JOHN BRAIN Jan 16, 2020</timer>
             </footer>
           </article>
         </div>
       </div>
     </section>
     <div class="container">
-      <div class="d-flex-lg">
-        <main class="col-lg-8">
-          <section>
+      <div class="container-main-aside">
+        <main class="main">
+          <section class="new-section">
             <h1 class="section-title">Latest <span class="section-title-resalt">Articles</span></h1>
-            <div class="d-flex justify-c-b f-wrap">
-              <article class="card article col-md-6 col-lg-4">
+            <div class="latest-articles">
+              <article class="card article">
                 <header class="card__header">
-                  <figure><img class="card__img" src="img/grid7.jpg" alt="Woman Near Pigeons"/>
+                  <figure><img class="lazy card__img" data-src="img/grid1.jpg" alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
-                        <h4 class="card__figcation-title">Woman Near <span class="card__figcation-title-resalt">Pigeons</span></h4>
-                        <timer class="card__date">Jan.20.2020</timer>
+                        <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
+                        <timer class="card__date" datetime="2020-06-05">Jan 20 2020</timer>
                       </div>
                     </figcaption>
                   </figure>
@@ -222,17 +191,17 @@
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1><a class="card__read-more" href="#">Read More</a>
                 </div>
                 <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-16">BY JOHN BRAIN Jan 16, 2020</timer>
                 </footer>
               </article>
-              <article class="card article col-md-6 col-lg-4">
+              <article class="card article">
                 <header class="card__header">
-                  <figure><img class="card__img" src="img/grid7.jpg" alt="Woman Near Pigeons"/>
+                  <figure><img class="lazy card__img" data-src="img/grid2.jpg" alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
-                        <h4 class="card__figcation-title">Woman Near <span class="card__figcation-title-resalt">Pigeons</span></h4>
-                        <timer class="card__date">Jan.20.2020</timer>
+                        <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
+                        <timer class="card__date" datetime="2020-06-05">Jan 20 2020</timer>
                       </div>
                     </figcaption>
                   </figure>
@@ -241,17 +210,17 @@
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1><a class="card__read-more" href="#">Read More</a>
                 </div>
                 <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-16">BY JOHN BRAIN Jan 16, 2020</timer>
                 </footer>
               </article>
-              <article class="card article col-md-6 col-lg-4">
+              <article class="card article">
                 <header class="card__header">
-                  <figure><img class="card__img" src="img/grid7.jpg" alt="Woman Near Pigeons"/>
+                  <figure><img class="lazy card__img" data-src="img/grid3.jpg" alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
-                        <h4 class="card__figcation-title">Woman Near <span class="card__figcation-title-resalt">Pigeons</span></h4>
-                        <timer class="card__date">Jan.20.2020</timer>
+                        <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
+                        <timer class="card__date" datetime="2020-06-05">Jan 20 2020</timer>
                       </div>
                     </figcaption>
                   </figure>
@@ -260,159 +229,175 @@
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1><a class="card__read-more" href="#">Read More</a>
                 </div>
                 <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-16">BY JOHN BRAIN Jan 16, 2020</timer>
                 </footer>
               </article>
             </div>
           </section>
-          <section>
+          <section class="new-section">
             <h1 class="section-title">GREAT <span class="section-title-resalt">LIFESTYLES</span></h1>
-            <div class="d-flex justify-c-b f-wrap">
-              <article class="card article col-md-6">
+            <div class="great-lifestyle">
+              <article class="card article">
                 <header class="card__header">
-                  <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
+                  <figure><img class="lazy card__img" data-src="img/grid4.jpg" alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
-                        <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                        <timer class="card__date">Jan.20.2020</timer>
+                        <h4 class="card__figcation-title">Sittin People Beside Table Inside<span class="card__figcation-title-resalt">Room</span></h4>
+                        <timer class="card__date" datetime="2020-06-16">Jan 20 2020</timer>
                       </div>
                     </figcaption>
                   </figure>
                 </header>
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                  <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
+              <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
                 </div>
                 <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-15">BY José Urbina Jan 5, 2020</timer>
                 </footer>
               </article>
-              <article class="card article col-md-6">
+              <article class="card article">
                 <header class="card__header">
-                  <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
+                  <figure><img class="lazy card__img" data-src="img/grid5.jpg" alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
-                        <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                        <timer class="card__date">Jan.20.2020</timer>
+                        <h4 class="card__figcation-title">Sittin People Beside Table Inside<span class="card__figcation-title-resalt">Room</span></h4>
+                        <timer class="card__date" datetime="2020-06-16">Jan 20 2020</timer>
                       </div>
                     </figcaption>
                   </figure>
                 </header>
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                  <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
+              <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
                 </div>
                 <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-15">BY José Urbina Jan 5, 2020</timer>
                 </footer>
               </article>
-              <div class="col-md-6">
-                <article class="card card-row">
-                  <header class="card__header"><img class="card-row__img--mini" src="img/m1.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+              <div class="great-lifestyle__conatiner-card-row">
+                <article class="card card-row-mini">
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m1.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+                <null></null>
                     </div>
-                    <foorter>
-                      <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+                    <foorter class="card__footer">
+                <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                      <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
                     </foorter>
                   </div>
                 </article>
-                <article class="card card-row">
-                  <header class="card__header"><img class="card-row__img--mini" src="img/m1.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                <article class="card card-row-mini">
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m2.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+                <null></null>
                     </div>
-                    <foorter>
-                      <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+                    <foorter class="card__footer">
+                <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                      <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
                     </foorter>
                   </div>
                 </article>
-                <article class="card card-row">
-                  <header class="card__header"><img class="card-row__img--mini" src="img/m1.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                <article class="card card-row-mini">
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m3.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+                <null></null>
                     </div>
-                    <foorter>
-                      <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+                    <foorter class="card__footer">
+                <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                      <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
                     </foorter>
                   </div>
                 </article>
-                <article class="card card-row">
-                  <header class="card__header"><img class="card-row__img--mini" src="img/m1.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                <article class="card card-row-mini">
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m4.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+                <null></null>
                     </div>
-                    <foorter>
-                      <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+                    <foorter class="card__footer">
+                <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                      <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
                     </foorter>
                   </div>
                 </article>
               </div>
-              <div class="col-md-6">
-                <article class="card card-row">
-                  <header class="card__header"><img class="card-row__img--mini" src="img/m1.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+              <div class="great-lifestyle__conatiner-card-row">
+                <article class="card card-row-mini">
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m12.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+                <null></null>
                     </div>
-                    <foorter>
-                      <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+                    <foorter class="card__footer">
+                <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                      <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
                     </foorter>
                   </div>
                 </article>
-                <article class="card card-row">
-                  <header class="card__header"><img class="card-row__img--mini" src="img/m1.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                <article class="card card-row-mini">
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m9.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+                <null></null>
                     </div>
-                    <foorter>
-                      <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+                    <foorter class="card__footer">
+                <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                      <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
                     </foorter>
                   </div>
                 </article>
-                <article class="card card-row">
-                  <header class="card__header"><img class="card-row__img--mini" src="img/m1.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                <article class="card card-row-mini">
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m10.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+                <null></null>
                     </div>
-                    <foorter>
-                      <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+                    <foorter class="card__footer">
+                <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                      <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
                     </foorter>
                   </div>
                 </article>
-                <article class="card card-row">
-                  <header class="card__header"><img class="card-row__img--mini" src="img/m1.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                <article class="card card-row-mini">
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m11.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+                <null></null>
                     </div>
-                    <foorter>
-                      <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+                    <foorter class="card__footer">
+                <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                      <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
                     </foorter>
                   </div>
                 </article>
               </div>
             </div>
           </section>
-          <section>
+          <section class="new-section">
             <h1 class="section-title">From <span class="section-title-resalt">Beauty</span></h1>
-            <div class="d-flex justify-c-b f-wrap">
-              <article class="card article col-md-6 col-lg-4">
+            <div class="from-beauty">
+              <article class="card article">
                 <header class="card__header">
-                  <figure><img class="card__img" src="img/grid7.jpg" alt="Woman Near Pigeons"/>
+                  <figure><img class="lazy card__img" data-src="img/grid6.jpg" alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
-                        <h4 class="card__figcation-title">Woman Near <span class="card__figcation-title-resalt">Pigeons</span></h4>
-                        <timer class="card__date">Jan.20.2020</timer>
+                        <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
+                        <timer class="card__date" datetime="2020-06-05">Jan 20 2020</timer>
                       </div>
                     </figcaption>
                   </figure>
@@ -421,17 +406,17 @@
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1><a class="card__read-more" href="#">Read More</a>
                 </div>
                 <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-16">BY JOHN BRAIN Jan 16, 2020</timer>
                 </footer>
               </article>
-              <article class="card article col-md-6 col-lg-4">
+              <article class="card article">
                 <header class="card__header">
-                  <figure><img class="card__img" src="img/grid7.jpg" alt="Woman Near Pigeons"/>
+                  <figure><img class="lazy card__img" data-src="img/grid7.jpg" alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
-                        <h4 class="card__figcation-title">Woman Near <span class="card__figcation-title-resalt">Pigeons</span></h4>
-                        <timer class="card__date">Jan.20.2020</timer>
+                        <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
+                        <timer class="card__date" datetime="2020-06-05">Jan 20 2020</timer>
                       </div>
                     </figcaption>
                   </figure>
@@ -440,17 +425,17 @@
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1><a class="card__read-more" href="#">Read More</a>
                 </div>
                 <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-16">BY JOHN BRAIN Jan 16, 2020</timer>
                 </footer>
               </article>
-              <article class="card article col-md-6 col-lg-4">
+              <article class="card article">
                 <header class="card__header">
-                  <figure><img class="card__img" src="img/grid7.jpg" alt="Woman Near Pigeons"/>
+                  <figure><img class="lazy card__img" data-src="img/grid8.jpg" alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
-                        <h4 class="card__figcation-title">Woman Near <span class="card__figcation-title-resalt">Pigeons</span></h4>
-                        <timer class="card__date">Jan.20.2020</timer>
+                        <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
+                        <timer class="card__date" datetime="2020-06-05">Jan 20 2020</timer>
                       </div>
                     </figcaption>
                   </figure>
@@ -459,112 +444,85 @@
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1><a class="card__read-more" href="#">Read More</a>
                 </div>
                 <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-16">BY JOHN BRAIN Jan 16, 2020</timer>
                 </footer>
               </article>
             </div>
           </section>
-          <section>
+          <section class="new-section">
             <h1 class="section-title">TECH AND <span class="section-title-resalt">GADGETS</span></h1>
-            <article class="card article d-flex-md">
-              <header class="card__header">
-                <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
-                  <figcaption class="card__figcation">
-                    <div class="content">
-                      <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                      <timer class="card__date">Jan.20.2020</timer>
-                    </div>
-                  </figcaption>
-                </figure>
-              </header>
+            <article class="card card-row">
+              <header class="card__header"><img class="lazy card__img" data-src="img/grid9.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
-                  <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                  <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p><a class="card__read-more" href="#">Read More</a>
+                  <h1 class="card__title"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+            <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p><a class="card__read-more" href="#">Read More</a>
                 </div>
-                <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
-                </footer>
+                <foorter class="card__footer">
+            <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
+                </foorter>
               </div>
             </article>
-            <article class="card article d-flex-md">
-              <header class="card__header">
-                <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
-                  <figcaption class="card__figcation">
-                    <div class="content">
-                      <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                      <timer class="card__date">Jan.20.2020</timer>
-                    </div>
-                  </figcaption>
-                </figure>
-              </header>
+            <article class="card card-row">
+              <header class="card__header"><img class="lazy card__img" data-src="img/grid10.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
-                  <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                  <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p><a class="card__read-more" href="#">Read More</a>
+                  <h1 class="card__title"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+            <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p><a class="card__read-more" href="#">Read More</a>
                 </div>
-                <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
-                </footer>
+                <foorter class="card__footer">
+            <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
+                </foorter>
               </div>
             </article>
-            <article class="card article d-flex-md">
-              <header class="card__header">
-                <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
-                  <figcaption class="card__figcation">
-                    <div class="content">
-                      <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                      <timer class="card__date">Jan.20.2020</timer>
-                    </div>
-                  </figcaption>
-                </figure>
-              </header>
+            <article class="card card-row">
+              <header class="card__header"><img class="lazy card__img" data-src="img/grid5.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
-                  <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                  <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p><a class="card__read-more" href="#">Read More</a>
+                  <h1 class="card__title"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+            <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p><a class="card__read-more" href="#">Read More</a>
                 </div>
-                <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
-                </footer>
+                <foorter class="card__footer">
+            <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
+                </foorter>
               </div>
             </article>
           </section>
-          <section>
+          <section class="new-section">
             <h1 class="section-title">TOP <span class="section-title-resalt">CATEGORIES</span></h1>
             <div class="categories">
-              <div class="card col-6 col-md-4">
+              <div class="card">
                 <div class="card__header">
-                  <figure><img class="card__img" src="img/grid20.jpg" alt="In Black Jacket And Brown Hat Standing On Rock "/>
+                  <figure><img class="lazy card__img" data-src="img/grid11.jpg" alt="null"/>
                     <figcaption class="card__figcation">
                       <div class="content">
-                        <h4 class="card__title--ocult"> <span class="card__figcation-title-resalt">FOOD</span></h4>
+                        <h4 class="card__title--ocult"><span class="card__figcation-title-resalt">FOOD</span></h4>
                       </div>
                     </figcaption>
                   </figure>
                 </div>
               </div>
-              <div class="card col-6 col-md-4">
+              <div class="card">
                 <div class="card__header">
-                  <figure><img class="card__img" src="img/grid20.jpg" alt="In Black Jacket And Brown Hat Standing On Rock "/>
+                  <figure><img class="lazy card__img" data-src="img/grid12.jpg" alt="null"/>
                     <figcaption class="card__figcation">
                       <div class="content">
-                        <h4 class="card__title--ocult"> <span class="card__figcation-title-resalt">FOOD</span></h4>
+                        <h4 class="card__title--ocult"><span class="card__figcation-title-resalt">FASHON</span></h4>
                       </div>
                     </figcaption>
                   </figure>
                 </div>
               </div>
-              <div class="card col-6 col-md-4">
+              <div class="card">
                 <div class="card__header">
-                  <figure><img class="card__img" src="img/grid20.jpg" alt="In Black Jacket And Brown Hat Standing On Rock "/>
+                  <figure><img class="lazy card__img" data-src="img/grid13.jpg" alt="null"/>
                     <figcaption class="card__figcation">
                       <div class="content">
-                        <h4 class="card__title--ocult"> <span class="card__figcation-title-resalt">FOOD</span></h4>
+                        <h4 class="card__title--ocult"><span class="card__figcation-title-resalt">CELEBRITIES</span></h4>
                       </div>
                     </figcaption>
                   </figure>
@@ -572,121 +530,82 @@
               </div>
             </div>
           </section>
-          <section>
+          <section class="new-section">
             <h1 class="section-title">TRENDY <span class="section-title-resalt">FASHION</span></h1>
-            <article class="card article d-flex-md">
-              <header class="card__header">
-                <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
-                  <figcaption class="card__figcation">
-                    <div class="content">
-                      <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                      <timer class="card__date">Jan.20.2020</timer>
-                    </div>
-                  </figcaption>
-                </figure>
-              </header>
+            <article class="card card-row">
+              <header class="card__header"><img class="lazy card__img" data-src="img/grid16.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
-                  <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                  <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p><a class="card__read-more" href="#">Read More</a>
+                  <h1 class="card__title"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+            <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p><a class="card__read-more" href="#">Read More</a>
                 </div>
-                <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
-                </footer>
+                <foorter class="card__footer">
+            <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
+                </foorter>
               </div>
             </article>
-            <article class="card article d-flex-md">
-              <header class="card__header">
-                <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
-                  <figcaption class="card__figcation">
-                    <div class="content">
-                      <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                      <timer class="card__date">Jan.20.2020</timer>
-                    </div>
-                  </figcaption>
-                </figure>
-              </header>
+            <article class="card card-row">
+              <header class="card__header"><img class="lazy card__img" data-src="img/grid17.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
-                  <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                  <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p><a class="card__read-more" href="#">Read More</a>
+                  <h1 class="card__title"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+            <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p><a class="card__read-more" href="#">Read More</a>
                 </div>
-                <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
-                </footer>
+                <foorter class="card__footer">
+            <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
+                </foorter>
               </div>
             </article>
-            <article class="card article d-flex-md">
-              <header class="card__header">
-                <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
-                  <figcaption class="card__figcation">
-                    <div class="content">
-                      <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                      <timer class="card__date">Jan.20.2020</timer>
-                    </div>
-                  </figcaption>
-                </figure>
-              </header>
+            <article class="card card-row">
+              <header class="card__header"><img class="lazy card__img" data-src="img/grid13.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
-                  <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                  <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p><a class="card__read-more" href="#">Read More</a>
+                  <h1 class="card__title"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+            <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p><a class="card__read-more" href="#">Read More</a>
                 </div>
-                <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
-                </footer>
+                <foorter class="card__footer">
+            <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
+                </foorter>
               </div>
             </article>
           </section>
-          <section>
+          <section class="new-section">
             <h1 class="section-title">TASTY <span class="section-title-resalt">FOOD</span></h1>
-            <div class="d-flex justify-c-b f-wrap">
-              <article class="card article col-md-6">
+            <div class="tasty-food">
+              <article class="card article">
                 <header class="card__header">
-                  <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
-                    <figcaption class="card__figcation">
-                      <div class="content">
-                        <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                        <timer class="card__date">Jan.20.2020</timer>
-                      </div>
-                    </figcaption>
+                  <figure><img class="lazy card__img" data-src="img/grid14.jpg" alt="There are many variations that focuses on presenting"/>
                   </figure>
                 </header>
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                  <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
+              <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
                 </div>
                 <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-15">BY José Urbina Jan 5, 2020</timer>
                 </footer>
               </article>
-              <article class="card article col-md-6">
+              <article class="card article">
                 <header class="card__header">
-                  <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
-                    <figcaption class="card__figcation">
-                      <div class="content">
-                        <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                        <timer class="card__date">Jan.20.2020</timer>
-                      </div>
-                    </figcaption>
+                  <figure><img class="lazy card__img" data-src="img/grid15.jpg" alt="There are many variations that focuses on presenting"/>
                   </figure>
                 </header>
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                  <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
+              <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
                 </div>
                 <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-15">BY José Urbina Jan 5, 2020</timer>
                 </footer>
               </article>
             </div>
           </section>
-          <section>
+          <section class="new-section">
             <h1 class="section-title">STAY <span class="section-title-resalt">CONECTED</span></h1>
             <div class="d-flex f-wrap">
               <div class="container-social-grid"><a class="social-grid" href="#">
@@ -715,121 +634,120 @@
                   </div></a></div>
             </div>
           </section>
-          <section>
+          <section class="new-section">
             <h1 class="section-title">BE <span class="section-title-resalt">HEALTH</span></h1>
-            <div class="d-flex justify-c-b f-wrap">
-              <article class="card article col-md-6">
+            <div class="be-health">
+              <article class="card article">
                 <header class="card__header">
-                  <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
-                    <figcaption class="card__figcation">
-                      <div class="content">
-                        <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                        <timer class="card__date">Jan.20.2020</timer>
-                      </div>
-                    </figcaption>
+                  <figure><img class="lazy card__img" data-src="img/grid18.jpg" alt="There are many variations that focuses on presenting"/>
                   </figure>
                 </header>
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                  <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
+              <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
                 </div>
                 <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-15">BY José Urbina Jan 5, 2020</timer>
                 </footer>
               </article>
-              <article class="card article col-md-6">
+              <article class="card article">
                 <header class="card__header">
-                  <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
-                    <figcaption class="card__figcation">
-                      <div class="content">
-                        <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                        <timer class="card__date">Jan.20.2020</timer>
-                      </div>
-                    </figcaption>
+                  <figure><img class="lazy card__img" data-src="img/grid19.jpg" alt="There are many variations that focuses on presenting"/>
                   </figure>
                 </header>
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                  <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
+              <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
                 </div>
                 <footer class="card__footer d-flex">
-                  <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-15">BY José Urbina Jan 5, 2020</timer>
                 </footer>
               </article>
             </div>
           </section>
         </main>
-        <aisde class="col-lg-4">
-          <section>
+        <aisde class="aside">
+          <section class="new-section">
             <h1 class="section-title">MUST <span class="section-title-resalt">READ</span></h1>
-            <article class="card card-row">
-              <header class="card__header"><img class="card-row__img--mini" src="img/m1.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+            <article class="card card-row-mini">
+              <header class="card__header"><img class="lazy card__img" data-src="img/m2.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
                   <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+            <null></null>
                 </div>
-                <foorter>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+                <foorter class="card__footer">
+            <null></null>
+                  <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
                 </foorter>
               </div>
             </article>
-            <article class="card card-row">
-              <header class="card__header"><img class="card-row__img--mini" src="img/m1.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+            <article class="card card-row-mini">
+              <header class="card__header"><img class="lazy card__img" data-src="img/m3.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
                   <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+            <null></null>
                 </div>
-                <foorter>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+                <foorter class="card__footer">
+            <null></null>
+                  <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
                 </foorter>
               </div>
             </article>
-            <article class="card card-row">
-              <header class="card__header"><img class="card-row__img--mini" src="img/m1.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+            <article class="card card-row-mini">
+              <header class="card__header"><img class="lazy card__img" data-src="img/m4.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
                   <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
+            <null></null>
                 </div>
-                <foorter>
-                  <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
+                <foorter class="card__footer">
+            <null></null>
+                  <timer class="article__date" datetime="2020-06-16">BY José Urbina Jan 5 2020</timer>
                 </foorter>
               </div>
             </article>
           </section>
-          <section>
+          <section class="new-section">
             <h1 class="section-title">TOP <span class="section-title-resalt">CATEGORIES</span></h1>
             <div class="container-grid-categories">
               <div class="grid-categories">
-                <div class="grid-categories__figure"><img class="grid-categories__img" src="img/m11.jpg"/></div>
+                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m11.jpg"/></div>
                 <div class="grid-categories__info"><a class="grid-categories__link" href="#">
                     <h4>Fashion</h4></a></div>
               </div>
               <div class="grid-categories">
-                <div class="grid-categories__figure"><img class="grid-categories__img" src="img/m11.jpg"/></div>
+                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m10.jpg"/></div>
                 <div class="grid-categories__info"><a class="grid-categories__link" href="#">
-                    <h4>Fashion</h4></a></div>
+                    <h4>Culture</h4></a></div>
               </div>
               <div class="grid-categories">
-                <div class="grid-categories__figure"><img class="grid-categories__img" src="img/m11.jpg"/></div>
+                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m12.jpg"/></div>
                 <div class="grid-categories__info"><a class="grid-categories__link" href="#">
-                    <h4>Fashion</h4></a></div>
+                    <h4>LifeStyle</h4></a></div>
               </div>
               <div class="grid-categories">
-                <div class="grid-categories__figure"><img class="grid-categories__img" src="img/m11.jpg"/></div>
+                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m9.jpg"/></div>
                 <div class="grid-categories__info"><a class="grid-categories__link" href="#">
-                    <h4>Fashion</h4></a></div>
+                    <h4>Food</h4></a></div>
+              </div>
+              <div class="grid-categories">
+                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m13.jpg"/></div>
+                <div class="grid-categories__info"><a class="grid-categories__link" href="#">
+                    <h4>Busines</h4></a></div>
               </div>
             </div>
             <div class="published"><a href="#"><img src="img/add.jpg"/></a></div>
           </section>
-          <section>
+          <section class="new-section">
             <h1 class="section-title">LATEST <span class="section-title-resalt">VIDEOS</span></h1>
             <div class="container-article-video">
               <article class="card article video">
                 <div class="card__header">
-                  <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
+                  <figure><img class="lazy card__img" data-src="img/grid5.jpg" alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation"><i class="icon-play"></i></figcaption>
                   </figure>
                 </div>
@@ -840,14 +758,12 @@
               <div class="containder-video-modal">
                 <div class="video-modal"><i class="icon-times"></i>
                   <h2 class="video-modal__title">Whach our video</h2>
-                  <div class="video-modal__vieo"></div>
+                  <div class="video-modal__video">This a video</div>
                 </div>
               </div>
-            </div>
-            <div class="container-article-video">
               <article class="card article video">
                 <div class="card__header">
-                  <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
+                  <figure><img class="lazy card__img" data-src="img/grid4.jpg" alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation"><i class="icon-play"></i></figcaption>
                   </figure>
                 </div>
@@ -858,12 +774,12 @@
               <div class="containder-video-modal">
                 <div class="video-modal"><i class="icon-times"></i>
                   <h2 class="video-modal__title">Whach our video</h2>
-                  <div class="video-modal__vieo"></div>
+                  <div class="video-modal__video">This a video</div>
                 </div>
               </div>
             </div>
           </section>
-          <section>
+          <section class="new-section">
             <h1 class="section-title">POPULAR  <span class="section-title-resalt">POST</span></h1>
             <div class="container-grid-categories post">
               <div class="grid-categories">
@@ -929,7 +845,7 @@
               </div>
             </div>
           </section>
-          <section>
+          <section class="new-section">
             <h1 class="section-title">RECENT <span class="section-title-resalt">COMMENTS</span></h1>
             <div class="autor">
               <div class="autor__figure"><a class="autor__img" href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
@@ -961,69 +877,52 @@
             </div>
             <div class="published"><a href="#"><img src="img/add1.jpg"/></a></div>
           </section>
-          <section>
+          <section class="new-section">
             <h1 class="section-title">DON'T <span class="section-title-resalt">MISS</span></h1>
-            <article class="card article">
-              <header class="card__header">
-                <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
-                  <figcaption class="card__figcation">
-                    <div class="content">
-                      <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                      <timer class="card__date">Jan.20.2020</timer>
-                    </div>
-                  </figcaption>
-                </figure>
-              </header>
-              <div class="card__body">
-                <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duifeugiat tortor sed.</p>
-              </div>
-              <footer class="card__footer d-flex">
-                <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
-              </footer>
-            </article>
-            <article class="card article">
-              <header class="card__header">
-                <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
-                  <figcaption class="card__figcation">
-                    <div class="content">
-                      <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                      <timer class="card__date">Jan.20.2020</timer>
-                    </div>
-                  </figcaption>
-                </figure>
-              </header>
-              <div class="card__body">
-                <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duifeugiat tortor sed.</p>
-              </div>
-              <footer class="card__footer d-flex">
-                <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
-              </footer>
-            </article>
-            <article class="card article">
-              <header class="card__header">
-                <figure><img class="card__img" src="img/grid4.jpg" alt="Sittin People Beside Table Inside Room"/>
-                  <figcaption class="card__figcation">
-                    <div class="content">
-                      <h4 class="card__figcation-title">Sittin People Beside Table Inside <span class="card__figcation-title-resalt">Room</span></h4>
-                      <timer class="card__date">Jan.20.2020</timer>
-                    </div>
-                  </figcaption>
-                </figure>
-              </header>
-              <div class="card__body">
-                <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
-                <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duifeugiat tortor sed.</p>
-              </div>
-              <footer class="card__footer d-flex">
-                <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
-                <timer class="article__date">BY JOHN BRAIN Jan 5, 2020</timer>
-              </footer>
-            </article>
-            <div class="published"><a href="#"><img src="img/add3.jpg"/></a></div>
+            <div class="container-dont-miss">
+              <article class="card article">
+                <header class="card__header">
+                  <figure><img class="lazy card__img" data-src="img/m5.jpg" alt="There are many variations that focuses on presenting"/>
+                  </figure>
+                </header>
+                <div class="card__body">
+                  <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
+              <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
+                </div>
+                <footer class="card__footer d-flex">
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-15">BY José Urbina Jan 5, 2020</timer>
+                </footer>
+              </article>
+              <article class="card article">
+                <header class="card__header">
+                  <figure><img class="lazy card__img" data-src="img/m6.jpg" alt="There are many variations that focuses on presenting"/>
+                  </figure>
+                </header>
+                <div class="card__body">
+                  <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
+              <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
+                </div>
+                <footer class="card__footer d-flex">
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-15">BY José Urbina Jan 5, 2020</timer>
+                </footer>
+              </article>
+              <article class="card article">
+                <header class="card__header">
+                  <figure><img class="lazy card__img" data-src="img/m7.jpg" alt="There are many variations that focuses on presenting"/>
+                  </figure>
+                </header>
+                <div class="card__body">
+                  <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
+              <p class="card__text">Vivamus a ligula quam. Ut blandit eu leo non suscipit. Duis feugiat tortor sed.</p>
+                </div>
+                <footer class="card__footer d-flex">
+              <div class="card__blogger"><a href="#"><img class="card__blogger-img" src="img/admin.jpg" alt="Admin"/></a></div>
+                  <timer class="article__date" datetime="2020-06-15">BY José Urbina Jan 5, 2020</timer>
+                </footer>
+              </article>
+            </div>
           </section>
         </aisde>
       </div>
@@ -1111,5 +1010,6 @@
         </div>
       </div>
     </footer>
+    <script async="async" src="js/app.js"></script>
   </body>
 </html>

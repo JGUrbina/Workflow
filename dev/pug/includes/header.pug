@@ -1,4 +1,3 @@
-
 header.header
 	.container-header-top
 		.container.d-flex.header-top
@@ -53,31 +52,3 @@ header.header
 			span.nav-button__line
 			span.nav-button__line
 		nav.nav
-			ul.list.menu
-				each menu in menuMain.length ? menuMain : ['No hay menú']
-					li.menu__item
-						
-						if(menu == 'home')
-							a(href="#", class="menu__home menu__link")= `${menu.toUpperCase()}`
-								i.icon-down-open
-							ul.list.menu__sub
-								each version in homeVersions.length ? homeVersions : ['No hay otras versiones del menu']
-									li.menu__item
-										a(href=`${version}.html`).menu__link= `${version.toUpperCase()}`
-						else if(menu == 'pages')
-							a(href=`${menu}.html`, class="menu__pages menu__link")= `${menu.toUpperCase()}`
-								i.icon-down-open
-							ul.list.menu__sub
-								each page in pages.length ? pages : ['No hay otras paginas']
-									li.menu__item
-										a(href="#").menu__link= `${page.toUpperCase()}`
-						else
-							a(href=`${menu}.html`).menu__link= `${menu.toUpperCase()}`
-			ul.list.d-flex
-				each social in socials.length ? socials : ['No socials']
-					li
-						a(href=`https://${social}.com`).modal__link
-							i(class=`icon-${social}`).socials-icon
-
-
-						

@@ -1,42 +1,6 @@
-section
+section.new-section
 	h1.section-title LATEST 
 		span.section-title-resalt VIDEOS
 	.container-article-video
-		article.card.article.video
-					.card__header
-						figure
-							img(src="img/grid4.jpg", alt="Sittin People Beside Table Inside Room").card__img
-							figcaption.card__figcation
-								i.icon-play
-					.card__body
-						h1.card__title
-							a(href="#").card__link There are many variations that focuses on presenting
-
-		.containder-video-modal
-			.video-modal
-				i.icon-times
-				h2.video-modal__title Whach our video
-				
-				.video-modal__vieo
-					
-					//- Video HERE
-
-	.container-article-video
-		article.card.article.video
-					.card__header
-						figure
-							img(src="img/grid4.jpg", alt="Sittin People Beside Table Inside Room").card__img
-							figcaption.card__figcation
-								i.icon-play
-					.card__body
-						h1.card__title
-							a(href="#").card__link There are many variations that focuses on presenting
-							
-		.containder-video-modal
-			.video-modal
-				i.icon-times
-				h2.video-modal__title Whach our video
-
-				.video-modal__vieo
-					
-					//- Video HERE
+		+cardVideo('grid5.jpg', 'There are many variations that focuses on presenting', 'This a video')
+		+cardVideo('grid4.jpg', 'There are many variations that focuses on presenting', 'This a video')
