@@ -9,13 +9,13 @@ html
 		link(rel="stylesheet", href="fonts/styles.css")
 		link(rel="stylesheet", href="css/style.css")
 		link(href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600|Playfair+Display:400,500,600,700,900&display=swap" rel="stylesheet")
-		script( async src="js/lazyload.js")
+		script( src="js/lazyload.js")
 	body
-		include ../includes/header
-		include ../includes/slider
-		include ../includes/recent-news
-		include ../includes/container-main-aside
-		include ../includes/subscribe
-		include ../includes/footer
-		script( async src="js/app.js")
+		block header
+		block slider
+		block recentNew
+		block container-main-aside
+		block subscribe
+		block footer
+		script( src="js/app.js")
 		

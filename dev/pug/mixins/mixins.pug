@@ -2,7 +2,7 @@ mixin card(img, figureTitle,resalt,datetime,date)
 	.card
 		.card__header
 			figure
-				img(data-src= `img/${img}`, alt=`${figureTitle}`, class="lazy").card__img
+				img(data-src= `img/${img}`, src="https://via.placeholder.com/440x560?text=..." ,alt=`${figureTitle}`, class="lazy").card__img
 				figcaption.card__figcation
 					.content
 						if figureTitle
@@ -23,7 +23,7 @@ mixin cardArticle(img, figureTitle,resalt,datetime,date,title,blogger, datetimeA
 	article.card.article
 				header.card__header
 					figure
-						img(data-src= `img/${img}`, alt=`${title}`, class="lazy").card__img
+						img(data-src= `img/${img}`, src="https://via.placeholder.com/440x560?text=..." ,alt=`${title}`, class="lazy").card__img
 						if figureTitle || resalt || date
 							figcaption.card__figcation
 								.content
@@ -46,7 +46,7 @@ mixin cardArticleRow(type,img,title,blogger, datetimeArticle, dateArticle)
 	if type == 'mini'
 		article.card.card-row-mini
 			header.card__header
-				img(data-src= `img/${img}`, alt=`${title}`, class="lazy").card__img
+				img(data-src= `img/${img}`, src="https://via.placeholder.com/440x560?text=..." ,alt=`${title}`, class="lazy").card__img
 			.content
 				.card__body
 					h1.card-row__title--mini
@@ -61,7 +61,7 @@ mixin cardArticleRow(type,img,title,blogger, datetimeArticle, dateArticle)
 	else
 		article.card.card-row
 			header.card__header
-				img(data-src= `img/${img}`, alt=`${title}`, class="lazy").card__img
+				img(data-src= `img/${img}`, src="https://via.placeholder.com/440x560?text=..." ,alt=`${title}`, class="lazy").card__img
 			.content
 				.card__body
 					h1.card__title
@@ -77,7 +77,7 @@ mixin cardArticleRow(type,img,title,blogger, datetimeArticle, dateArticle)
 mixin cardGrid(img, title)
 	.grid-categories
 			.grid-categories__figure
-				img(data-src=`img/${img}`, class="lazy").grid-categories__img
+				img(data-src=`img/${img}`, src="https://via.placeholder.com/440x560?text=..." ,class="lazy").grid-categories__img
 			.grid-categories__info
 				a(href="#").grid-categories__link
 					h4=`${title}`
@@ -86,16 +86,17 @@ mixin cardVideo(thumbnail, title, video)
 		article.card.article.video
 					.card__header
 						figure
-							img(data-src=`img/${thumbnail}`, alt=`${title}`, class="lazy").card__img
+							img(data-src=`img/${thumbnail}`, src="https://via.placeholder.com/440x560?text=...",alt=`${title}`, class="lazy").card__img
 							figcaption.card__figcation
 								i.icon-play
 					.card__body
 						h1.card__title
 							a(href="#").card__link= `${title}`
-
-		.containder-video-modal
+					.card__footer
+		.containder-video-modal.ocult
 			.video-modal
 				i.icon-times
 				h2.video-modal__title Whach our video
-				
+								
 				.video-modal__video= `${video}`
+		

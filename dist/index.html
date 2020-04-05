@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="fonts/styles.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600|Playfair+Display:400,500,600,700,900&amp;display=swap" rel="stylesheet"/>
-    <script async="async" src="js/lazyload.js"></script>
+    <script src="js/lazyload.js"></script>
   </head>
   <body>
     <header class="header">
@@ -19,7 +19,7 @@
           <div class="overlay d-flex">
             <div class="overlay__user-and-toggle"><a class="overlay__user" href="#"><i class="icon-user overlay__icon"></i></a></div>
             <div class="modal-botton"><i class="icon-bars overlay__icon"></i></div>
-            <div class="modal d-none"><i class="icon-times"></i>
+            <div class="modal ocult"><i class="icon-times"></i>
               <div class="modal__about-site m-t-24">
                 <h3 class="modal__title">About Web Fashion</h3>
                 <p class="modal__text">Lorem ipsum dolor sit amet, adipi scingelit. Vestibulum orci justo, vehicula vel sapien sit amet.</p>
@@ -52,21 +52,52 @@
               </div>
             </div>
             <div class="search-container">
-              <div class="search-icon"><i class="icon-search overlay__icon"></i>
-                <form class="search">
-                  <div class="continer-inputs"><i class="icon-times"></i>
-                    <input class="search__text" type="text" placeholder="Search"/>
-                    <input class="search__button" type="button" value="Search"/>
-                  </div>
-                </form>
-              </div>
+              <div class="search-icon"><i class="icon-search overlay__icon"></i></div>
+              <form class="search ocult">
+                <div class="continer-inputs"><i class="icon-times"></i>
+                  <input class="search__text" type="text" placeholder="Search"/>
+                  <input class="search__button" type="button" value="Search"/>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
       <div class="header-bottom container">
         <div class="nav-button"><span class="nav-button__line"></span><span class="nav-button__line"></span><span class="nav-button__line"></span></div>
-        <nav class="nav"></nav>
+        <nav class="nav">
+          <ul class="list menu">
+            <li class="menu__item"><a class="menu__home menu__link" href="#">HOME<i class="icon-down-open"></i></a>
+              <ul class="list menu__sub">
+                <li class="menu__item"><a class="menu__link" href="home.html">HOME</a></li>
+                <li class="menu__item"><a class="menu__link" href="homev1.html">HOMEV1</a></li>
+                <li class="menu__item"><a class="menu__link" href="homev2.html">HOMEV2</a></li>
+                <li class="menu__item"><a class="menu__link" href="homev3.html">HOMEV3</a></li>
+                <li class="menu__item"><a class="menu__link" href="autor.html">AUTOR</a></li>
+              </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="lifestyle.html">LIFESTYLE</a>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="culture.html">CULTURE</a>
+            </li>
+            <li class="menu__item"><a class="menu__pages menu__link" href="pages.html">PAGES<i class="icon-down-open"></i></a>
+              <ul class="list menu__sub">
+                <li class="menu__item"><a class="menu__link" href="#">FOOD</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">AUTORS</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">BLOG POST</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">BLOG DETAILS</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">CONTACT</a></li>
+              </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <ul class="list d-flex">
+            <li><a class="modal__link" href="https://facebook.com"><i class="icon-facebook socials-icon"></i></a></li>
+            <li><a class="modal__link" href="https://twitter.com"><i class="icon-twitter socials-icon"></i></a></li>
+            <li><a class="modal__link" href="https://google.com"><i class="icon-google socials-icon"></i></a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <div class="container" id="slider">
@@ -121,7 +152,7 @@
         <div class="recent-news">
           <div class="card">
             <div class="card__header">
-              <figure><img class="lazy card__img" data-src="img/grid20.jpg" alt="Man In Black Jacket And Brown Hat Standing On Rock "/>
+              <figure><img class="lazy card__img" data-src="img/grid20.jpg" src="https://via.placeholder.com/440x560?text=..." alt="Man In Black Jacket And Brown Hat Standing On Rock "/>
                 <figcaption class="card__figcation">
                   <div class="content">
                     <h4 class="card__title--ocult">Man In Black Jacket And Brown Hat Standing On Rock <span class="card__figcation-title-resalt">Near Lake</span></h4>
@@ -133,7 +164,7 @@
           </div>
           <article class="card article">
             <header class="card__header">
-              <figure><img class="lazy card__img" data-src="img/grid7.jpg" alt="There are many variations that focuses on presenting"/>
+              <figure><img class="lazy card__img" data-src="img/grid7.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                 <figcaption class="card__figcation">
                   <div class="content">
                     <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
@@ -151,7 +182,7 @@
           </article>
           <article class="card article">
             <header class="card__header">
-              <figure><img class="lazy card__img" data-src="img/grid8.jpg" alt="There are many variations that focuses on presenting"/>
+              <figure><img class="lazy card__img" data-src="img/grid8.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                 <figcaption class="card__figcation">
                   <div class="content">
                     <h4 class="card__figcation-title">Man Standing On Railroad Near<span class="card__figcation-title-resalt">Plants</span></h4>
@@ -178,7 +209,7 @@
             <div class="latest-articles">
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid1.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid1.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
                         <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
@@ -197,7 +228,7 @@
               </article>
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid2.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid2.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
                         <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
@@ -216,7 +247,7 @@
               </article>
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid3.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid3.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
                         <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
@@ -240,7 +271,7 @@
             <div class="great-lifestyle">
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid4.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid4.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
                         <h4 class="card__figcation-title">Sittin People Beside Table Inside<span class="card__figcation-title-resalt">Room</span></h4>
@@ -260,7 +291,7 @@
               </article>
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid5.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid5.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
                         <h4 class="card__figcation-title">Sittin People Beside Table Inside<span class="card__figcation-title-resalt">Room</span></h4>
@@ -280,7 +311,7 @@
               </article>
               <div class="great-lifestyle__conatiner-card-row">
                 <article class="card card-row-mini">
-                  <header class="card__header"><img class="lazy card__img" data-src="img/m1.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m1.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -293,7 +324,7 @@
                   </div>
                 </article>
                 <article class="card card-row-mini">
-                  <header class="card__header"><img class="lazy card__img" data-src="img/m2.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m2.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -306,7 +337,7 @@
                   </div>
                 </article>
                 <article class="card card-row-mini">
-                  <header class="card__header"><img class="lazy card__img" data-src="img/m3.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m3.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -319,7 +350,7 @@
                   </div>
                 </article>
                 <article class="card card-row-mini">
-                  <header class="card__header"><img class="lazy card__img" data-src="img/m4.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m4.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -334,7 +365,7 @@
               </div>
               <div class="great-lifestyle__conatiner-card-row">
                 <article class="card card-row-mini">
-                  <header class="card__header"><img class="lazy card__img" data-src="img/m12.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m12.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -347,7 +378,7 @@
                   </div>
                 </article>
                 <article class="card card-row-mini">
-                  <header class="card__header"><img class="lazy card__img" data-src="img/m9.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m9.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -360,7 +391,7 @@
                   </div>
                 </article>
                 <article class="card card-row-mini">
-                  <header class="card__header"><img class="lazy card__img" data-src="img/m10.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m10.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -373,7 +404,7 @@
                   </div>
                 </article>
                 <article class="card card-row-mini">
-                  <header class="card__header"><img class="lazy card__img" data-src="img/m11.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+                  <header class="card__header"><img class="lazy card__img" data-src="img/m11.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
                   <div class="content">
                     <div class="card__body">
                       <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -393,7 +424,7 @@
             <div class="from-beauty">
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid6.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid6.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
                         <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
@@ -412,7 +443,7 @@
               </article>
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid7.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid7.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
                         <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
@@ -431,7 +462,7 @@
               </article>
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid8.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid8.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation">
                       <div class="content">
                         <h4 class="card__figcation-title">Woman Near<span class="card__figcation-title-resalt">Pigeons</span></h4>
@@ -453,7 +484,7 @@
           <section class="new-section">
             <h1 class="section-title">TECH AND <span class="section-title-resalt">GADGETS</span></h1>
             <article class="card card-row">
-              <header class="card__header"><img class="lazy card__img" data-src="img/grid9.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+              <header class="card__header"><img class="lazy card__img" data-src="img/grid9.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -466,7 +497,7 @@
               </div>
             </article>
             <article class="card card-row">
-              <header class="card__header"><img class="lazy card__img" data-src="img/grid10.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+              <header class="card__header"><img class="lazy card__img" data-src="img/grid10.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -479,7 +510,7 @@
               </div>
             </article>
             <article class="card card-row">
-              <header class="card__header"><img class="lazy card__img" data-src="img/grid5.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+              <header class="card__header"><img class="lazy card__img" data-src="img/grid5.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -497,7 +528,7 @@
             <div class="categories">
               <div class="card">
                 <div class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid11.jpg" alt="null"/>
+                  <figure><img class="lazy card__img" data-src="img/grid11.jpg" src="https://via.placeholder.com/440x560?text=..." alt="null"/>
                     <figcaption class="card__figcation">
                       <div class="content">
                         <h4 class="card__title--ocult"><span class="card__figcation-title-resalt">FOOD</span></h4>
@@ -508,7 +539,7 @@
               </div>
               <div class="card">
                 <div class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid12.jpg" alt="null"/>
+                  <figure><img class="lazy card__img" data-src="img/grid12.jpg" src="https://via.placeholder.com/440x560?text=..." alt="null"/>
                     <figcaption class="card__figcation">
                       <div class="content">
                         <h4 class="card__title--ocult"><span class="card__figcation-title-resalt">FASHON</span></h4>
@@ -519,7 +550,7 @@
               </div>
               <div class="card">
                 <div class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid13.jpg" alt="null"/>
+                  <figure><img class="lazy card__img" data-src="img/grid13.jpg" src="https://via.placeholder.com/440x560?text=..." alt="null"/>
                     <figcaption class="card__figcation">
                       <div class="content">
                         <h4 class="card__title--ocult"><span class="card__figcation-title-resalt">CELEBRITIES</span></h4>
@@ -533,7 +564,7 @@
           <section class="new-section">
             <h1 class="section-title">TRENDY <span class="section-title-resalt">FASHION</span></h1>
             <article class="card card-row">
-              <header class="card__header"><img class="lazy card__img" data-src="img/grid16.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+              <header class="card__header"><img class="lazy card__img" data-src="img/grid16.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -546,7 +577,7 @@
               </div>
             </article>
             <article class="card card-row">
-              <header class="card__header"><img class="lazy card__img" data-src="img/grid17.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+              <header class="card__header"><img class="lazy card__img" data-src="img/grid17.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -559,7 +590,7 @@
               </div>
             </article>
             <article class="card card-row">
-              <header class="card__header"><img class="lazy card__img" data-src="img/grid13.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+              <header class="card__header"><img class="lazy card__img" data-src="img/grid13.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -577,7 +608,7 @@
             <div class="tasty-food">
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid14.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid14.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                   </figure>
                 </header>
                 <div class="card__body">
@@ -591,7 +622,7 @@
               </article>
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid15.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid15.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                   </figure>
                 </header>
                 <div class="card__body">
@@ -639,7 +670,7 @@
             <div class="be-health">
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid18.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid18.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                   </figure>
                 </header>
                 <div class="card__body">
@@ -653,7 +684,7 @@
               </article>
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid19.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid19.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                   </figure>
                 </header>
                 <div class="card__body">
@@ -672,7 +703,7 @@
           <section class="new-section">
             <h1 class="section-title">MUST <span class="section-title-resalt">READ</span></h1>
             <article class="card card-row-mini">
-              <header class="card__header"><img class="lazy card__img" data-src="img/m2.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+              <header class="card__header"><img class="lazy card__img" data-src="img/m2.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
                   <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -685,7 +716,7 @@
               </div>
             </article>
             <article class="card card-row-mini">
-              <header class="card__header"><img class="lazy card__img" data-src="img/m3.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+              <header class="card__header"><img class="lazy card__img" data-src="img/m3.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
                   <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -698,7 +729,7 @@
               </div>
             </article>
             <article class="card card-row-mini">
-              <header class="card__header"><img class="lazy card__img" data-src="img/m4.jpg" alt="There Are Many Variations That Focuses On Presenting"/></header>
+              <header class="card__header"><img class="lazy card__img" data-src="img/m4.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There Are Many Variations That Focuses On Presenting"/></header>
               <div class="content">
                 <div class="card__body">
                   <h1 class="card-row__title--mini"><a class="card__link" href="#">There Are Many Variations That Focuses On Presenting</a></h1>
@@ -715,27 +746,27 @@
             <h1 class="section-title">TOP <span class="section-title-resalt">CATEGORIES</span></h1>
             <div class="container-grid-categories">
               <div class="grid-categories">
-                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m11.jpg"/></div>
+                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m11.jpg" src="https://via.placeholder.com/440x560?text=..."/></div>
                 <div class="grid-categories__info"><a class="grid-categories__link" href="#">
                     <h4>Fashion</h4></a></div>
               </div>
               <div class="grid-categories">
-                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m10.jpg"/></div>
+                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m10.jpg" src="https://via.placeholder.com/440x560?text=..."/></div>
                 <div class="grid-categories__info"><a class="grid-categories__link" href="#">
                     <h4>Culture</h4></a></div>
               </div>
               <div class="grid-categories">
-                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m12.jpg"/></div>
+                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m12.jpg" src="https://via.placeholder.com/440x560?text=..."/></div>
                 <div class="grid-categories__info"><a class="grid-categories__link" href="#">
                     <h4>LifeStyle</h4></a></div>
               </div>
               <div class="grid-categories">
-                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m9.jpg"/></div>
+                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m9.jpg" src="https://via.placeholder.com/440x560?text=..."/></div>
                 <div class="grid-categories__info"><a class="grid-categories__link" href="#">
                     <h4>Food</h4></a></div>
               </div>
               <div class="grid-categories">
-                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m13.jpg"/></div>
+                <div class="grid-categories__figure"><img class="lazy grid-categories__img" data-src="img/m13.jpg" src="https://via.placeholder.com/440x560?text=..."/></div>
                 <div class="grid-categories__info"><a class="grid-categories__link" href="#">
                     <h4>Busines</h4></a></div>
               </div>
@@ -747,15 +778,16 @@
             <div class="container-article-video">
               <article class="card article video">
                 <div class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid5.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid5.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation"><i class="icon-play"></i></figcaption>
                   </figure>
                 </div>
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
                 </div>
+                <div class="card__footer"></div>
               </article>
-              <div class="containder-video-modal">
+              <div class="containder-video-modal ocult">
                 <div class="video-modal"><i class="icon-times"></i>
                   <h2 class="video-modal__title">Whach our video</h2>
                   <div class="video-modal__video">This a video</div>
@@ -763,18 +795,19 @@
               </div>
               <article class="card article video">
                 <div class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/grid4.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/grid4.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                     <figcaption class="card__figcation"><i class="icon-play"></i></figcaption>
                   </figure>
                 </div>
                 <div class="card__body">
                   <h1 class="card__title"><a class="card__link" href="#">There are many variations that focuses on presenting</a></h1>
                 </div>
+                <div class="card__footer"></div>
               </article>
-              <div class="containder-video-modal">
+              <div class="containder-video-modal ocult">
                 <div class="video-modal"><i class="icon-times"></i>
                   <h2 class="video-modal__title">Whach our video</h2>
-                  <div class="video-modal__video">This a video</div>
+                  <div class="video-modal__video">ola</div>
                 </div>
               </div>
             </div>
@@ -882,7 +915,7 @@
             <div class="container-dont-miss">
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/m5.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/m5.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                   </figure>
                 </header>
                 <div class="card__body">
@@ -896,7 +929,7 @@
               </article>
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/m6.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/m6.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                   </figure>
                 </header>
                 <div class="card__body">
@@ -910,7 +943,7 @@
               </article>
               <article class="card article">
                 <header class="card__header">
-                  <figure><img class="lazy card__img" data-src="img/m7.jpg" alt="There are many variations that focuses on presenting"/>
+                  <figure><img class="lazy card__img" data-src="img/m7.jpg" src="https://via.placeholder.com/440x560?text=..." alt="There are many variations that focuses on presenting"/>
                   </figure>
                 </header>
                 <div class="card__body">
@@ -922,6 +955,7 @@
                   <timer class="article__date" datetime="2020-06-15">BY José Urbina Jan 5, 2020</timer>
                 </footer>
               </article>
+              <div class="published"></div><a href="#"><img src="img/add.jpg"/></a>
             </div>
           </section>
         </aisde>
@@ -1007,9 +1041,10 @@
         </section>
         <div class="copy">
           <p>© 2020 Webzine. All rights reserved. Design by <a href="#">W3Layouts  </a>and Mokup by <a href="#">José Urbina</a></p>
+          <div class="movetop" id="movetop"><i class="icon-times"></i></div>
         </div>
       </div>
     </footer>
-    <script async="async" src="js/app.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

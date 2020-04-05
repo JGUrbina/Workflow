@@ -3,7 +3,7 @@
 	--secondary: #ffa372;
 	--white: #fff;
 	--black: #000;
-
+	
 }
 
 $primary: var(--primary);
@@ -55,6 +55,20 @@ img {
 		display: flex; 
 		justify-content: space-between;
 	}
+
+	.main {
+		@include laptop {
+			flex: 0 0 calc(66.666% - 15px);
+			max-width: calc(66.666% - 15px);
+		}
+	}
+
+	.aside {
+		@include laptop {
+			flex: 0 0 calc(33.333% - 15px);
+			max-width: calc(33.333% - 15px);
+		}
+	}
 }
 .d-flex {
 	display: flex;
@@ -84,6 +98,10 @@ img {
 	position: absolute;
 }
 
+.ocult {
+	display: none !important;
+}
+
 $width: 0;
 @for $i from 1 through 12 {
 	.col-#{$i} {
@@ -93,3 +111,22 @@ $width: 0;
 		}
 }
 
+
+@include tablet {
+	
+	.container-md-flex {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	$width: 0;
+	// asajsxjhb
+	@for $i from 1 through 12 {
+		$width: $width + 8.33333%;
+		.col-md-#{$i} {
+				flex: 0 0 $width;
+				max-width:  $width;
+				padding: 0 15px;
+			}
+	}
+}

@@ -13,7 +13,7 @@ header.header
 						i.icon-user.overlay__icon
 				.modal-botton
 					i.icon-bars.overlay__icon
-				.modal.d-none
+				.modal.ocult
 					i.icon-times
 					.modal__about-site.m-t-24
 						h3.modal__title About Web Fashion
@@ -41,14 +41,39 @@ header.header
 				.search-container
 					.search-icon
 						i.icon-search.overlay__icon
-						form.search
-							.continer-inputs
-								i.icon-times
-								input(type="text", placeholder="Search").search__text
-								input(type="button", value="Search").search__button
+					form.search.ocult
+						.continer-inputs
+							i.icon-times
+							input(type="text", placeholder="Search").search__text
+							input(type="button", value="Search").search__button
 	.header-bottom.container
 		.nav-button
 			span.nav-button__line
 			span.nav-button__line
 			span.nav-button__line
 		nav.nav
+			ul.list.menu
+				each menu in menuMain.length ? menuMain : ['No hay menú']
+					li.menu__item
+							
+						if(menu == 'home')
+							a(href="#", class="menu__home menu__link")= `${menu.toUpperCase()}`
+								i.icon-down-open
+							ul.list.menu__sub
+								each version in homeVersions.length ? homeVersions : ['No hay otras versiones del menu']
+									li.menu__item
+										a(href=`${version}.html`).menu__link= `${version.toUpperCase()}`
+						else if(menu == 'pages')
+							a(href=`${menu}.html`, class="menu__pages menu__link")= `${menu.toUpperCase()}`
+								i.icon-down-open
+							ul.list.menu__sub
+								each page in pages.length ? pages : ['No hay otras paginas']
+									li.menu__item
+										a(href="#").menu__link= `${page.toUpperCase()}`
+						else
+							a(href=`${menu}.html`).menu__link= `${menu.toUpperCase()}`
+			ul.list.d-flex
+				each social in socials.length ? socials : ['No socials']
+						li
+							a(href=`https://${social}.com`).modal__link
+								i(class=`icon-${social}`).socials-icon

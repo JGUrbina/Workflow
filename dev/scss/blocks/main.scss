@@ -1,8 +1,5 @@
 .main {
-	@include laptop {
-		flex: 0 0 calc(66.666% - 15px);
-		max-width: calc(66.666% - 15px);
-	}
+	
 }
 
 .recent-news {

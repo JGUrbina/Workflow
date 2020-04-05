@@ -82,4 +82,18 @@
 		color: #b52b65;
 		font-weight: 700;
 	}
+	.movetop {
+		position: fixed;
+		bottom: 50px;
+		right: 10px;
+		height: 50px;
+		width: 50px;
+		background-color: $primary;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		cursor: pointer;
+		
+	}
 }
