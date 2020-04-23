@@ -6,14 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    
-  ],
+  "keywords": [],
   "author": "José Urbina",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -22,20 +20,20 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2"
   },
   "browserslist": {
-  "production": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all"
-  ],
-  "development": [
-    "last 1 chrome version",
-    "last 1 firefox version",
-    "last 1 safari version",
-    "last 1 ie version"
-  ]
-}
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 ie version"
+    ]
+  }
 }
